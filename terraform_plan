@@ -1,0 +1,912 @@
+[0m[1mRefreshing Terraform state in-memory prior to plan...[0m
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+[0m
+[0m[1mmodule.create_circleci.aws_iam_role.circleci_role: Refreshing state... [id=test_role][0m
+[0m[1mmodule.create_circleci.module.shutdown_sqs.aws_sqs_queue.mod_queue: Refreshing state... [id=https://sqs.us-east-1.amazonaws.com/432450059541/test_shutdown_queue][0m
+[0m[1mmodule.create_vpc.aws_vpc.theVPC: Refreshing state... [id=vpc-0c05bc0cc303c0df4][0m
+[0m[1mmodule.create_circleci.module.shutdown_sqs.aws_iam_role.mod_role: Refreshing state... [id=test_shutdown_queue_role][0m
+[0m[1mmodule.create_vpc.data.aws_availability_zones.available: Refreshing state...[0m
+[0m[1mmodule.create_circleci.aws_iam_instance_profile.circleci_profile: Refreshing state... [id=test_profile][0m
+[0m[1mmodule.create_circleci.module.shutdown_sqs.aws_iam_role_policy.mod_role_policy: Refreshing state... [id=test_shutdown_queue_role:test_shutdown_queue_role][0m
+[0m[1mmodule.create_vpc.aws_internet_gateway.igw: Refreshing state... [id=igw-028ffac1c5514bac9][0m
+[0m[1mmodule.create_vpc.aws_security_group.bastion_SG: Refreshing state... [id=sg-022863c42c526aeb9][0m
+[0m[1mmodule.create_circleci.aws_security_group.circleci_builders_sg: Refreshing state... [id=sg-0e680bc5f4ea24216][0m
+[0m[1mmodule.create_circleci.module.nomad.aws_security_group.ssh_sg[0]: Refreshing state... [id=sg-01417f4df153c4a78][0m
+[0m[1mmodule.create_circleci.aws_s3_bucket.circleci_bucket: Refreshing state... [id=test-bucket-0c05bc0cc303c0df4][0m
+[0m[1mmodule.create_circleci.aws_security_group.circleci_vm_sg: Refreshing state... [id=sg-09889871e1abc7ba9][0m
+[0m[1mmodule.create_circleci.aws_security_group.circleci_services_sg: Refreshing state... [id=sg-0aa9c09727ff63ff9][0m
+[0m[1mmodule.create_vpc.aws_subnet.public-subnets[0]: Refreshing state... [id=subnet-0f8b707e804fe8816][0m
+[0m[1mmodule.create_vpc.aws_subnet.public-subnets[1]: Refreshing state... [id=subnet-0a25a71954b95cf23][0m
+[0m[1mmodule.create_circleci.aws_security_group.circleci_builders_admin_sg: Refreshing state... [id=sg-035e198fda243d737][0m
+[0m[1mmodule.create_vpc.aws_nat_gateway.ghe_access[0]: Refreshing state... [id=nat-054c4bd4a5ec6d7f4][0m
+[0m[1mmodule.create_vpc.aws_nat_gateway.ghe_access[1]: Refreshing state... [id=nat-0131f2979e5290824][0m
+[0m[1mmodule.create_vpc.aws_subnet.private-subnets[0]: Refreshing state... [id=subnet-074406664f27ca8b0][0m
+[0m[1mmodule.create_vpc.aws_subnet.private-subnets[1]: Refreshing state... [id=subnet-01482b276e6e93dc5][0m
+[0m[1mmodule.create_vpc.aws_instance.bastion[1]: Refreshing state... [id=i-07990316498a7ce15][0m
+[0m[1mmodule.create_vpc.aws_instance.bastion[0]: Refreshing state... [id=i-062c7013d6d8eb18c][0m
+[0m[1mmodule.create_circleci.module.nomad.aws_security_group.nomad_sg[0]: Refreshing state... [id=sg-084b88f29743394d2][0m
+[0m[1mmodule.create_circleci.aws_security_group.circleci_users_sg: Refreshing state... [id=sg-0167c1b65ed01eaa2][0m
+[0m[1mmodule.create_vpc.aws_route_table.public-rt[0]: Refreshing state... [id=rtb-012ce2da6cdf1ebd8][0m
+[0m[1mmodule.create_vpc.aws_route_table.public-rt[1]: Refreshing state... [id=rtb-0e33b29174da02803][0m
+[0m[1mmodule.create_vpc.aws_route_table.private-rt[1]: Refreshing state... [id=rtb-0ff88840f6471e642][0m
+[0m[1mmodule.create_vpc.aws_route_table.private-rt[0]: Refreshing state... [id=rtb-0f32524c8028e391e][0m
+[0m[1mmodule.create_vpc.aws_route_table_association.private-subnets[0]: Refreshing state... [id=rtbassoc-0860df28c81032d3e][0m
+[0m[1mmodule.create_vpc.aws_route_table_association.public-subnets[0]: Refreshing state... [id=rtbassoc-0ed104a7ee3be8e5c][0m
+[0m[1mmodule.create_vpc.aws_route_table_association.public-subnets[1]: Refreshing state... [id=rtbassoc-03563a344f43706d7][0m
+[0m[1mmodule.create_vpc.aws_route_table_association.private-subnets[1]: Refreshing state... [id=rtbassoc-0619375521840cbe8][0m
+[0m[1mmodule.create_circleci.data.template_file.circleci_policy: Refreshing state...[0m
+[0m[1mmodule.create_circleci.data.template_file.services_user_data: Refreshing state...[0m
+[0m[1mmodule.create_circleci.aws_iam_role_policy.circleci_policy: Refreshing state... [id=test_role:test_policy][0m
+[0m[1mmodule.create_circleci.aws_instance.services: Refreshing state... [id=i-0e70a636fd1f12cc4][0m
+[0m[1mmodule.create_circleci.aws_eip_association.eip_assoc: Refreshing state... [id=eipassoc-039ac327e24f0a231][0m
+[0m[1mmodule.create_circleci.module.nomad.module.cloudinit.data.template_file.nomad_user_data: Refreshing state...[0m
+[0m[1mmodule.create_circleci.data.template_file.output: Refreshing state...[0m
+[0m[1mmodule.create_circleci.module.legacy_builder_user_data.data.template_file.mod: Refreshing state...[0m
+[0m[1mmodule.create_circleci.module.nomad.aws_launch_configuration.clients_lc[0]: Refreshing state... [id=terraform-20200305145946694200000002][0m
+[0m[1mmodule.create_circleci.module.legacy_builder.aws_launch_configuration.mod_lc: Refreshing state... [id=terraform-20200305145946698900000003][0m
+[0m[1mmodule.create_circleci.module.legacy_builder.aws_autoscaling_group.mod_asg: Refreshing state... [id=test_builders_asg][0m
+[0m[1mmodule.create_circleci.module.nomad.aws_autoscaling_group.clients_asg[0]: Refreshing state... [id=test_nomad_clients_asg][0m
+[0m[1mmodule.create_circleci.module.legacy_builder.aws_autoscaling_lifecycle_hook.mod_shutdown_hook: Refreshing state... [id=test_builders_shutdown_hook][0m
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  [32m+[0m create
+  [33m~[0m update in-place
+[31m-[0m/[32m+[0m destroy and then create replacement
+[32m+[0m/[31m-[0m create replacement and then destroy
+ [36m<=[0m read (data resources)
+[0m
+Terraform will perform the following actions:
+
+[1m  # module.create_circleci.data.template_file.output[0m will be read during apply
+  # (config refers to values not yet known)[0m[0m
+[0m [36m<=[0m[0m data "template_file" "output"  {
+      [32m+[0m [0m[1m[0mid[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0mrendered[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mtemplate[0m[0m = <<~EOT
+            
+            Your installation is complete. It may take several minutes until it is ready.
+            
+            "Continue the installation by visiting:"
+            
+                http://${services_public_ip}:8800
+            
+            To ssh into the Services box of your installation using your `${ssh_key}` private key:
+            
+                ssh ubuntu@${services_public_ip}
+            
+            Thank you and enjoy using CircleCI! 
+        EOT
+      [32m+[0m [0m[1m[0mvars[0m[0m     = {
+          [32m+[0m [0m"services_public_ip" = (known after apply)
+          [32m+[0m [0m"ssh_key"            = "CircleCI.testing"
+        }
+    }
+
+[1m  # module.create_circleci.data.template_file.services_user_data[0m will be read during apply
+  # (config refers to values not yet known)[0m[0m
+[0m [36m<=[0m[0m data "template_file" "services_user_data"  {
+      [32m+[0m [0m[1m[0mid[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0mrendered[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mtemplate[0m[0m = <<~EOT
+            #!/bin/bash
+            
+            set -exu
+            REPLICATED_VERSION="2.38.0"
+            UNAME="$(uname -r)"
+            
+            export http_proxy="${http_proxy}"
+            export https_proxy="${https_proxy}"
+            export no_proxy="${no_proxy}"
+            export DEBIAN_FRONTEND=noninteractive
+            
+            echo "-------------------------------------------"
+            echo "     Performing System Updates"
+            echo "-------------------------------------------"
+            apt-get update && apt-get -y upgrade
+            
+            echo "--------------------------------------"
+            echo "        Installing NTP"
+            echo "--------------------------------------"
+            apt-get install -y ntp
+            
+            # Use AWS NTP config for EC2 instances and default for non-AWS
+            if [ -f /sys/hypervisor/uuid ] && [ `head -c 3 /sys/hypervisor/uuid` == ec2 ]; then
+            cat <<EOT > /etc/ntp.conf
+            driftfile /var/lib/ntp/ntp.drift
+            disable monitor
+            
+            restrict default ignore
+            restrict 127.0.0.1 mask 255.0.0.0
+            restrict 169.254.169.123 nomodify notrap
+            
+            server 169.254.169.123 prefer iburst
+            EOT
+            else
+              echo "USING DEFAULT NTP CONFIGURATION"
+            fi
+            
+            service ntp restart
+            
+            echo "--------------------------------------------"
+            echo "       Setting Private IP"
+            echo "--------------------------------------------"
+            export PRIVATE_IP="$(curl http://169.254.169.254/latest/meta-data/local-ipv4)"
+            
+            echo "--------------------------------------------"
+            echo "          Download Replicated"
+            echo "--------------------------------------------"
+            curl -sSk -o /tmp/get_replicated.sh "https://get.replicated.com/docker?replicated_tag=$REPLICATED_VERSION&replicated_ui_tag=$REPLICATED_VERSION&replicated_operator_tag=$REPLICATED_VERSION"
+            
+            echo "--------------------------------------"
+            echo "        Installing Docker"
+            echo "--------------------------------------"
+            apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+            add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+            apt-get update
+            apt-get install -y "linux-image-$UNAME"
+            apt-get -y install docker-ce="17.12.1~ce-0~ubuntu"
+            
+            echo "--------------------------------------------"
+            echo "       Installing Replicated"
+            echo "--------------------------------------------"
+            sleep 3
+            bash /tmp/get_replicated.sh local-address="$PRIVATE_IP" no-proxy no-docker
+            
+            echo "--------------------------------------------"
+            echo "       Passing Variables"
+            echo "--------------------------------------------"
+            config_dir=/var/lib/replicated/circle-config
+            mkdir -p $config_dir
+            echo '${circle_secret_passphrase}' > $config_dir/circle_secret_passphrase
+            echo '${sqs_queue_url}' > $config_dir/sqs_queue_url
+            echo '${s3_bucket}' > $config_dir/s3_bucket
+            echo '${aws_region}' > $config_dir/aws_region
+            echo '${subnet_id}' > $config_dir/subnet_id
+            echo '${vm_sg_id}' > $config_dir/vm_sg_id
+            echo '${http_proxy}' > $config_dir/http_proxy
+            echo '${https_proxy}' > $config_dir/https_proxy
+            echo '${no_proxy}' > $config_dir/no_proxy
+        EOT
+      [32m+[0m [0m[1m[0mvars[0m[0m     = {
+          [32m+[0m [0m"aws_region"               = "us-east-1"
+          [32m+[0m [0m"circle_secret_passphrase" = "M4r3s34t04ts"
+          [32m+[0m [0m"http_proxy"               = ""
+          [32m+[0m [0m"https_proxy"              = ""
+          [32m+[0m [0m"no_proxy"                 = ""
+          [32m+[0m [0m"s3_bucket"                = "test-bucket-0c05bc0cc303c0df4"
+          [32m+[0m [0m"sqs_queue_url"            = "https://sqs.us-east-1.amazonaws.com/432450059541/test_shutdown_queue"
+          [32m+[0m [0m"subnet_id"                = "subnet-074406664f27ca8b0"
+          [32m+[0m [0m"vm_sg_id"                 = "sg-09889871e1abc7ba9"
+        }
+    }
+
+[1m  # module.create_circleci.aws_eip_association.eip_assoc[0m must be [1m[31mreplaced[0m[0m
+[0m[31m-[0m/[32m+[0m[0m resource "aws_eip_association" "eip_assoc" {
+        [1m[0mallocation_id[0m[0m        = "eipalloc-0d915f407b01a6c6d"
+      [33m~[0m [0m[1m[0mid[0m[0m                   = "eipassoc-039ac327e24f0a231" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0minstance_id[0m[0m          = "i-0e70a636fd1f12cc4" [33m->[0m [0m(known after apply) [31m# forces replacement[0m[0m
+      [33m~[0m [0m[1m[0mnetwork_interface_id[0m[0m = "eni-0e4ba717797db23d8" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mprivate_ip_address[0m[0m   = "10.0.0.211" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mpublic_ip[0m[0m            = "18.233.135.73" [33m->[0m [0m(known after apply)
+    }
+
+[1m  # module.create_circleci.aws_instance.services[0m must be [1m[31mreplaced[0m[0m
+[0m[32m+[0m/[31m-[0m[0m resource "aws_instance" "services" {
+        [1m[0mami[0m[0m                          = "ami-0cfee17793b08a293"
+      [33m~[0m [0m[1m[0marn[0m[0m                          = "arn:aws:ec2:us-east-1:432450059541:instance/i-0e70a636fd1f12cc4" [33m->[0m [0m(known after apply)
+        [1m[0massociate_public_ip_address[0m[0m  = true
+      [33m~[0m [0m[1m[0mavailability_zone[0m[0m            = "us-east-1a" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mcpu_core_count[0m[0m               = 4 [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mcpu_threads_per_core[0m[0m         = 2 [33m->[0m [0m(known after apply)
+        [1m[0mdisable_api_termination[0m[0m      = true
+      [31m-[0m [0m[1m[0mebs_optimized[0m[0m                = false [90m->[0m [0m[90mnull[0m[0m
+        [1m[0mget_password_data[0m[0m            = false
+      [32m+[0m [0m[1m[0mhost_id[0m[0m                      = (known after apply)
+        [1m[0miam_instance_profile[0m[0m         = "test_profile"
+      [33m~[0m [0m[1m[0mid[0m[0m                           = "i-0e70a636fd1f12cc4" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0minstance_state[0m[0m               = "running" [33m->[0m [0m(known after apply)
+        [1m[0minstance_type[0m[0m                = "m4.2xlarge"
+      [33m~[0m [0m[1m[0mipv6_address_count[0m[0m           = 0 [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mipv6_addresses[0m[0m               = [] [33m->[0m [0m(known after apply)
+        [1m[0mkey_name[0m[0m                     = "CircleCI.testing"
+      [31m-[0m [0m[1m[0mmonitoring[0m[0m                   = false [90m->[0m [0m[90mnull[0m[0m
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mpassword_data[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mplacement_group[0m[0m              = (known after apply)
+      [33m~[0m [0m[1m[0mprimary_network_interface_id[0m[0m = "eni-0e4ba717797db23d8" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mprivate_dns[0m[0m                  = "ip-10-0-0-211.ec2.internal" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mprivate_ip[0m[0m                   = "10.0.0.211" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mpublic_dns[0m[0m                   = "ec2-18-233-135-73.compute-1.amazonaws.com" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0mpublic_ip[0m[0m                    = "18.233.135.73" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0msecurity_groups[0m[0m              = [] [33m->[0m [0m(known after apply)
+        [1m[0msource_dest_check[0m[0m            = true
+        [1m[0msubnet_id[0m[0m                    = "subnet-0f8b707e804fe8816"
+        [1m[0mtags[0m[0m                         = {
+            "ApplicationName"    = "CX HA Environment"
+            "CiscoMailAlias"     = "brigrier@cisco.com"
+            "DataClassification" = "Infrastructure"
+            "DataTaxonomy"       = "undefined"
+            "Name"               = "test-circleci-services"
+            "ResourceOwner"      = "CX Engineering"
+        }
+      [33m~[0m [0m[1m[0mtenancy[0m[0m                      = "default" [33m->[0m [0m(known after apply)
+      [33m~[0m [0m[1m[0muser_data[0m[0m                    = "9ba783ecb8bc29c0453502e9baac72005769a921" [33m->[0m [0m(known after apply) [31m# forces replacement[0m[0m
+      [33m~[0m [0m[1m[0mvolume_tags[0m[0m                  = {} [33m->[0m [0m(known after apply)
+        [1m[0mvpc_security_group_ids[0m[0m       = [
+            "sg-0167c1b65ed01eaa2",
+            "sg-0aa9c09727ff63ff9",
+        ]
+
+      [32m+[0m [0mebs_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+
+      [32m+[0m [0mephemeral_block_device {
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0mno_device[0m[0m    = (known after apply)
+          [32m+[0m [0m[1m[0mvirtual_name[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mnetwork_interface {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_index[0m[0m          = (known after apply)
+          [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m  = (known after apply)
+        }
+
+      [33m~[0m [0mroot_block_device {
+            [1m[0mdelete_on_termination[0m[0m = false
+          [33m~[0m [0m[1m[0mencrypted[0m[0m             = false [33m->[0m [0m(known after apply)
+          [33m~[0m [0m[1m[0miops[0m[0m                  = 450 [33m->[0m [0m(known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [33m~[0m [0m[1m[0mvolume_id[0m[0m             = "vol-00d9666d92ee13f11" [33m->[0m [0m(known after apply)
+            [1m[0mvolume_size[0m[0m           = 150
+            [1m[0mvolume_type[0m[0m           = "gp2"
+        }
+    }
+
+[1m  # module.create_circleci.aws_security_group.circleci_users_sg[0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "aws_security_group" "circleci_users_sg" {
+        [1m[0marn[0m[0m                    = "arn:aws:ec2:us-east-1:432450059541:security-group/sg-0167c1b65ed01eaa2"
+        [1m[0mdescription[0m[0m            = "SG representing users of CircleCI Enterprise"
+        [1m[0megress[0m[0m                 = []
+        [1m[0mid[0m[0m                     = "sg-0167c1b65ed01eaa2"
+      [33m~[0m [0m[1m[0mingress[0m[0m                = [
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/24",
+                  [31m-[0m [0m"10.0.2.0/24",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 3001
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 3001
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/24",
+                  [31m-[0m [0m"10.0.2.0/24",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 4647
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 4647
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/24",
+                  [31m-[0m [0m"10.0.2.0/24",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 7171
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 7171
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/24",
+                  [31m-[0m [0m"10.0.2.0/24",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 8585
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 8585
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"10.0.0.0/24",
+                  [32m+[0m [0m"10.0.2.0/24",
+                ]
+              [32m+[0m [0mdescription      = [90mnull[0m[0m
+              [32m+[0m [0mfrom_port        = 3001
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 3001
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"10.0.0.0/24",
+                  [32m+[0m [0m"10.0.2.0/24",
+                ]
+              [32m+[0m [0mdescription      = [90mnull[0m[0m
+              [32m+[0m [0mfrom_port        = 4647
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 4647
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"10.0.0.0/24",
+                  [32m+[0m [0m"10.0.2.0/24",
+                ]
+              [32m+[0m [0mdescription      = [90mnull[0m[0m
+              [32m+[0m [0mfrom_port        = 7171
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 7171
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"10.0.0.0/24",
+                  [32m+[0m [0m"10.0.2.0/24",
+                ]
+              [32m+[0m [0mdescription      = [90mnull[0m[0m
+              [32m+[0m [0mfrom_port        = 8585
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 8585
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"64.100.0.0/14",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 22
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 22
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"64.100.0.0/14",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"128.107.0.0/16",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 8800
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 8800
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"64.100.0.0/14",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"72.163.0.0/16",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 443
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 443
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"64.100.0.0/14",
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"144.254.0.0/16",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 80
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 80
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"64.100.0.0/14",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"10.0.0.0/16",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 64535
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 65535
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 22
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 22
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 443
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 443
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 64535
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 65535
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 80
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 80
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 8800
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 8800
+            },
+        ]
+        [1m[0mname[0m[0m                   = "test_users_sg"
+        [1m[0mowner_id[0m[0m               = "432450059541"
+        [1m[0mrevoke_rules_on_delete[0m[0m = false
+        [1m[0mtags[0m[0m                   = {}
+        [1m[0mvpc_id[0m[0m                 = "vpc-0c05bc0cc303c0df4"
+    }
+
+[1m  # module.create_circleci.aws_security_group.circleci_vm_sg[0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "aws_security_group" "circleci_vm_sg" {
+        [1m[0marn[0m[0m                    = "arn:aws:ec2:us-east-1:432450059541:security-group/sg-09889871e1abc7ba9"
+        [1m[0mdescription[0m[0m            = "SG for VMs allocated by CircleCI for Remote Docker and machine executor"
+        [1m[0megress[0m[0m                 = [
+            {
+                cidr_blocks      = [
+                    "0.0.0.0/0",
+                ]
+                description      = ""
+                from_port        = 0
+                ipv6_cidr_blocks = []
+                prefix_list_ids  = []
+                protocol         = "-1"
+                security_groups  = []
+                self             = false
+                to_port          = 0
+            },
+        ]
+        [1m[0mid[0m[0m                     = "sg-09889871e1abc7ba9"
+      [33m~[0m [0m[1m[0mingress[0m[0m                = [
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"64.100.0.0/14",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 2376
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 2376
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"44.228.201.109/32",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"64.100.0.0/14",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 22
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 22
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"128.107.0.0/16",
+                  [31m-[0m [0m"72.163.0.0/16",
+                  [31m-[0m [0m"64.100.0.0/14",
+                  [31m-[0m [0m"144.254.0.0/16",
+                  [31m-[0m [0m"173.36.0.0/14",
+                  [31m-[0m [0m"10.0.0.0/16",
+                  [31m-[0m [0m"44.228.201.109/32",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 54782
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 54782
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 22
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 22
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 2376
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 2376
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"64.100.0.0/14",
+                  [32m+[0m [0m"72.163.0.0/16",
+                  [32m+[0m [0m"128.107.0.0/16",
+                  [32m+[0m [0m"144.254.0.0/16",
+                  [32m+[0m [0m"173.36.0.0/14",
+                  [32m+[0m [0m"44.228.201.109/32",
+                  [32m+[0m [0m"10.0.0.0/16",
+                  [32m+[0m [0m"10.0.0.0/16",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 54782
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 54782
+            },
+        ]
+        [1m[0mname[0m[0m                   = "test_vm_sg"
+        [1m[0mowner_id[0m[0m               = "432450059541"
+        [1m[0mrevoke_rules_on_delete[0m[0m = false
+        [1m[0mtags[0m[0m                   = {}
+        [1m[0mvpc_id[0m[0m                 = "vpc-0c05bc0cc303c0df4"
+    }
+
+[1m  # module.create_circleci.module.legacy_builder.aws_autoscaling_group.mod_asg[0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "aws_autoscaling_group" "mod_asg" {
+        [1m[0marn[0m[0m                       = "arn:aws:autoscaling:us-east-1:432450059541:autoScalingGroup:90fb791f-b414-4248-b18f-3f60d0e9b061:autoScalingGroupName/test_builders_asg"
+        [1m[0mavailability_zones[0m[0m        = [
+            "us-east-1a",
+        ]
+        [1m[0mdefault_cooldown[0m[0m          = 300
+        [1m[0mdesired_capacity[0m[0m          = 0
+        [1m[0menabled_metrics[0m[0m           = []
+        [1m[0mforce_delete[0m[0m              = true
+        [1m[0mhealth_check_grace_period[0m[0m = 300
+        [1m[0mhealth_check_type[0m[0m         = "EC2"
+        [1m[0mid[0m[0m                        = "test_builders_asg"
+      [33m~[0m [0m[1m[0mlaunch_configuration[0m[0m      = "terraform-20200305145946694200000002" [33m->[0m [0m(known after apply)
+        [1m[0mload_balancers[0m[0m            = []
+        [1m[0mmax_instance_lifetime[0m[0m     = 0
+        [1m[0mmax_size[0m[0m                  = 2
+        [1m[0mmetrics_granularity[0m[0m       = "1Minute"
+        [1m[0mmin_size[0m[0m                  = 0
+        [1m[0mname[0m[0m                      = "test_builders_asg"
+        [1m[0mprotect_from_scale_in[0m[0m     = false
+        [1m[0mservice_linked_role_arn[0m[0m   = "arn:aws:iam::432450059541:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling"
+        [1m[0msuspended_processes[0m[0m       = []
+        [1m[0mtarget_group_arns[0m[0m         = []
+        [1m[0mtermination_policies[0m[0m      = []
+        [1m[0mvpc_zone_identifier[0m[0m       = [
+            "subnet-074406664f27ca8b0",
+        ]
+        [1m[0mwait_for_capacity_timeout[0m[0m = "10m"
+
+        tag {
+            [1m[0mkey[0m[0m                 = "Name"
+            [1m[0mpropagate_at_launch[0m[0m = true
+            [1m[0mvalue[0m[0m               = "test_builders"
+        }
+    }
+
+[1m  # module.create_circleci.module.legacy_builder.aws_launch_configuration.mod_lc[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_launch_configuration" "mod_lc" {
+      [32m+[0m [0m[1m[0marn[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0massociate_public_ip_address[0m[0m = false
+      [32m+[0m [0m[1m[0mebs_optimized[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0menable_monitoring[0m[0m           = true
+      [32m+[0m [0m[1m[0miam_instance_profile[0m[0m        = "test_profile"
+      [32m+[0m [0m[1m[0mid[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0mimage_id[0m[0m                    = "ami-0cfee17793b08a293"
+      [32m+[0m [0m[1m[0minstance_type[0m[0m               = "r3.4xlarge"
+      [32m+[0m [0m[1m[0mkey_name[0m[0m                    = "CircleCI.testing"
+      [32m+[0m [0m[1m[0mname[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0msecurity_groups[0m[0m             = [
+          [32m+[0m [0m"sg-0167c1b65ed01eaa2",
+          [32m+[0m [0m"sg-035e198fda243d737",
+          [32m+[0m [0m"sg-0e680bc5f4ea24216",
+        ]
+      [32m+[0m [0m[1m[0muser_data[0m[0m                   = "aff918962739c872aed9dfcd32fb076f454b28af"
+
+      [32m+[0m [0mebs_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mno_device[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+
+      [32m+[0m [0mroot_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = false
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = 150
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = "gp2"
+        }
+    }
+
+[1m  # module.create_circleci.module.nomad.aws_security_group.nomad_sg[0][0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "aws_security_group" "nomad_sg" {
+        [1m[0marn[0m[0m                    = "arn:aws:ec2:us-east-1:432450059541:security-group/sg-084b88f29743394d2"
+        [1m[0mdescription[0m[0m            = "SG for CircleCI nomad server/client"
+        [1m[0megress[0m[0m                 = [
+            {
+                cidr_blocks      = [
+                    "0.0.0.0/0",
+                ]
+                description      = ""
+                from_port        = 0
+                ipv6_cidr_blocks = []
+                prefix_list_ids  = []
+                protocol         = "-1"
+                security_groups  = []
+                self             = false
+                to_port          = 0
+            },
+        ]
+        [1m[0mid[0m[0m                     = "sg-084b88f29743394d2"
+      [33m~[0m [0m[1m[0mingress[0m[0m                = [
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"0.0.0.0/0",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 64535
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 65535
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"0.0.0.0/0",
+                ]
+              [32m+[0m [0mdescription      = [90mnull[0m[0m
+              [32m+[0m [0mfrom_port        = 64535
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 65535
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0mcidr_blocks      = [
+                  [31m-[0m [0m"10.0.0.0/16",
+                ]
+              [31m-[0m [0mdescription      = ""
+              [31m-[0m [0mfrom_port        = 4646
+              [31m-[0m [0mipv6_cidr_blocks = []
+              [31m-[0m [0mprefix_list_ids  = []
+              [31m-[0m [0mprotocol         = "tcp"
+              [31m-[0m [0msecurity_groups  = []
+              [31m-[0m [0mself             = false
+              [31m-[0m [0mto_port          = 4648
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"10.0.2.0/24",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 4646
+              [32m+[0m [0mipv6_cidr_blocks = []
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 4648
+            },
+        ]
+        [1m[0mname[0m[0m                   = "test_nomad_sg"
+        [1m[0mowner_id[0m[0m               = "432450059541"
+        [1m[0mrevoke_rules_on_delete[0m[0m = false
+        [1m[0mtags[0m[0m                   = {}
+        [1m[0mvpc_id[0m[0m                 = "vpc-0c05bc0cc303c0df4"
+    }
+
+[0m[1mPlan:[0m 3 to add, 4 to change, 2 to destroy.[0m
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
