@@ -15,3 +15,7 @@ To use this Terraform template you will need to set the region that deployment w
 3) ln -s region_us-west-2 region.tf (For Disaster Recover)
 
 After performing this you MUST run "terraform init" to properly use the region.
+
+In the file "vars.tf" there is a variable named: Corporate_IPs
+
+In this list place the list of your company's points of presence, in CIDR format, to restrict access to the Circle CI service machine on the public subnet to only yourself and/or people within your company.
